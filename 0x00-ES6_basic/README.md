@@ -208,68 +208,7 @@ $ npm -v
 
   </div>
 </div>
-  <div class="panel-heading panel-heading-actions">
-    <h3 class="panel-title">
-      9. ES6 method properties
-    </h3>
-
-  </div>
-
-  <div class="panel-body">
-    <span id="user_id" data-id="251885"></span>
-    <!-- Progress vs Score -->
-    <!-- Task Body -->
-    <p>Rewrite <code>getFullBudgetObject</code> to use ES6 method properties in the <code>fullBudget</p>
-  <div class="panel-heading panel-heading-actions">
-    <h3 class="panel-title">
-      10. For...of Loops
-    </h3>
-  </div>
-
-  <div class="panel-body">
-    <span id="user_id" data-id="251885"></span>
-    <!-- Progress vs Score -->
-    <!-- Task Body -->
-    <p>Rewrite the function <code>appendToEachArrayValue</code> to use ES6&rsquo;s <code>for...of</code> operator. And don&rsquo;t forget that <code>var</code> is not ES6-friendly.</p>
- </div>
-</div>
-    
-  <div class="panel-heading panel-heading-actions">
-    <h3 class="panel-title">
-      11. Iterator
-    </h3>
-  </div>
-
-  <div class="panel-body">
-    <span id="user_id" data-id="251885"></span>
-    <!-- Progress vs Score -->
-    <!-- Task Body -->
-    <p>Write a function named <code>createEmployeesObject</code> that will receive two arguments:</p>
-  </div>
-</div>
-  <div class="panel-heading panel-heading-actions">
-    <h3 class="panel-title">
-      12. Let&#39;s create a report object
-    </h3>
-  </div>
-
-  <div class="panel-body">
-    <span id="user_id" data-id="251885"></span>
-    <!-- Progress vs Score -->
-    <!-- Task Body -->
-    <p>Write a function named <code>createReportObject</code> whose parameter, <code>employeesList</code>, is the return value of the previous function <code>createEmployeesObject</code>.</p>
-
-<pre><code>export default function createReportObject(employeesList) {
-
-}
-</code></pre>
-
-<p><code>createReportObject</code> should return an object containing the key <code>allEmployees</code> and a method property called <code>getNumberOfDepartments</code>. </p>
-
-<p><code>allEmployees</code> is a key that maps to an object containing the department name and a list of all the employees in that department. If you&rsquo;re having trouble, use the spread syntax.</p>
-
-<p>The method property receives <code>employeesList</code> and returns the number of departments. I would suggest suggest thinking back to the ES6 method property syntax.</p>
-</div>
+  
 
   </body>
 </html>
