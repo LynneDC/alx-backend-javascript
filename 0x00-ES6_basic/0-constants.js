@@ -1,9 +1,3 @@
-/*
- * modify
- * function taskFirst to instantiate variables using const
- * function taskNext to instantiate variables using let
- */
-
 export function taskFirst() {
   const task = 'I prefer const when I can.';
   return task;
