@@ -3,56 +3,46 @@
  * takes 3 parameters in the constructor
  * params are assigned to private instance
  */
-class HolbertonCourse {
+export default class HolbertonCourse {
   constructor(name, length, students) {
-    this.name = '';
-    this.length = 0;
-    this.students = [];
-
-    /* verify and set params */
-    this.name = name;
-    this.length = length;
-    this.students = students;
+    if (typeof name !== 'string' || typeof length !== 'number' || !Array.isArray(students)) {
+      throw new Error('Invalid input type');
+    }
+    this._name = name;
+    this._length = length;
+    this._students = students;
   }
 
-  // getter method
   get name() {
     return this._name;
+  }
+
+  set name(value) {
+    if (typeof value !== 'string') {
+      throw new Error('Invalid input type');
+    }
+    this._name = value;
   }
 
   get length() {
     return this._length;
   }
 
+  set length(value) {
+    if (typeof value !== 'number') {
+      throw new Error('Invalid input type');
+    }
+    this._length = value;
+  }
+
   get students() {
     return this._students;
   }
 
-  // setter methods
-  set name(value) {
-    if (typeof value === 'string') {
-      this._name = value;
-    } else {
-      throw new TypeError('Name must be a string');
-    }
-  }
-
-  set length(value) {
-    const num = Number(value);
-    if (!Number.isNaN(num)) {
-      this._length = num;
-    } else {
-      throw new TypeError('Lengrh must be a number');
-    }
-  }
-
   set students(value) {
-    if (Array.isArray(value) && value.every((student) => typeof student === 'string')) {
-      this._students = value;
-    } else {
-      throw new TypeError('Students must be an array of strings');
+    if (!Array.isArray(value)) {
+      throw new Error('Invalid input type');
     }
+    this._students = value;
   }
 }
-
-export default HolbertonCourse;
