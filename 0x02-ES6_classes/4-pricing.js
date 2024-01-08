@@ -13,10 +13,9 @@ import Currency from './3-currency';
 export default class Pricing {
   constructor(amount, currency) {
     this._amount = amount;
-    this._currecy = currency;
+    this._currency = currency;
   }
 
-  // getter method
   get amount() {
     return this._amount;
   }
@@ -25,7 +24,6 @@ export default class Pricing {
     return this._currency;
   }
 
-  // setter method
   set amount(amount) {
     this._amount = amount;
   }
@@ -34,13 +32,11 @@ export default class Pricing {
     this._currency = currency;
   }
 
-  // function method
   displayFullPrice() {
     return `${this._amount} ${new Currency(this._currency.code, this._currency.name).displayFullCurrency()}`;
   }
 
-  // static method
-  static covertPrice(amount, conversionRate) {
+  static convertPrice(amount, conversionRate) {
     return amount * conversionRate;
   }
 }
