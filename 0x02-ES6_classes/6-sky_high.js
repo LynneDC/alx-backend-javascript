@@ -16,9 +16,6 @@ export default class SkyHighBuilding extends Building {
   }
 
   // getter method
-  get sqft() {
-    return this._sqft;
-  }
 
   get floors() {
     return this._floors;
@@ -28,4 +25,3 @@ export default class SkyHighBuilding extends Building {
     return (`vacuate slowly the ${this.floors} floors`);
   }
 }
-export default SkyHighBuilding;
