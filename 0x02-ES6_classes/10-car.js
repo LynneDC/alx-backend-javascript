@@ -6,11 +6,12 @@
  * new object of the class
  */
 export default class Car {
-  constuctor(brand, motor, color) {
+  constructor(brand, motor, color) {
     this._brand = brand;
     this._motor = motor;
     this._color = color;
   }
+
   static get [Symbol.species]() {
     return this;
   }
