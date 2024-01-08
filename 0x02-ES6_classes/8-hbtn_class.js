@@ -5,19 +5,16 @@
  * when cast, number return size
  * and string return location
  */
-export default class HolbertonClass {
-  constuctor(size, location) {
+ export default class HolbertonClass {
+  constructor(size, location) {
     this._size = size;
     this._location = location;
   }
 
-  // cust to number
-  valuOF() {
-    return this._size;
-  }
-
-  // cust to string
-  toString() {
+  [Symbol.toPrimitive](hint) {
+    if (hint === 'number') {
+      return this._size;
+    }
     return this._location;
   }
 }
