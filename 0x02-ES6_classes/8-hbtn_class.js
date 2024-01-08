@@ -5,7 +5,7 @@
  * when cast, number return size
  * and string return location
  */
- export default class HolbertonClass {
+export default class HolbertonClass {
   constructor(size, location) {
     this._size = size;
     this._location = location;
