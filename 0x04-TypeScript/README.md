@@ -8,15 +8,7 @@
     <meta name="description" content="">
     <meta name="google" content="notranslate">
 
-     
-
-  <!-- Google Tag Manager -->
-  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-  })(window,document,'script','dataLayer','GTM-N4C8MF2');</script>
-  <!-- End Google Tag Manager -->
+   
     
 <meta name="csrf-token" content="N-zAF9AfWLJhEEwH3EXj3DE09-88LNsFG2aY_D6Zt3SkH0A9j4eiHW1dkM9J-dQTcv4Vp1OpIDIViiyonjUb2w" />
 
